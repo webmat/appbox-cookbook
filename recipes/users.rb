@@ -30,8 +30,7 @@ end
 
 node.default["authorization"]["sudo"]["groups"] = [
   "sudo",
-  node["appbox"]["admin_user"],
-  node["appbox"]["deploy_user"]  # TODO workaround to enable deployer to restart app
+  node["appbox"]["admin_user"]
 ]
 node.default["authorization"]["sudo"]["passwordless"] = true
 include_recipe "sudo"
