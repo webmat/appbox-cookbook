@@ -13,6 +13,7 @@ end
 user_account node["appbox"]["deploy_user"] do
   comment "deployer"
   ssh_keys node["appbox"]["deploy_keys"]
+  ssh_keygen true
 end
 user_account node["appbox"]["admin_user"] do
   comment "sysadmin"
