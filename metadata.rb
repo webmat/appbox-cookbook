@@ -8,8 +8,10 @@ version          "0.1.0"
 
 supports "ubuntu"
 supports "debian"
+supports "centos"
 
 depends "apt"
+depends "yum"
 depends "sudo"
 depends "user"
 depends "curl"
